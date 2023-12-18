@@ -77,3 +77,4 @@ RTL realization
 ![FULL ADDER OUTPUT](https://github.com/Gowtham-jk/Exp-02-Implementation-of-Half-Adder-and-Full-Adder-circuit/assets/149857834/8fc9cd01-5e90-4933-8c6a-3a2251566e28)
 
 ### Result:
+To design a half adder and full adder circuit and verify its truth table in Quartus using Verilog programming.
