@@ -1,5 +1,6 @@
 # Exp-02-Implementation-of-Half-Adder-and-Full-Adder-circuit
-
+# Name : Gowtham . V
+# REGISTER NUMBER : 23006362
 # Implementation-of-Half-Adder-and-Full-Adder-circuit
 ### AIM:
 To design a half adder and full adder circuit and verify its truth table in Quartus using Verilog programming.
@@ -34,21 +35,45 @@ Sum =A’B’Cin + A’BCin’ + ABCin + AB’Cin’ = A ⊕ B ⊕ Cin Carry = A
 Connect the supply (+5V) to the circuit
 Switch ON the main switch
 If the output is 1, then the led glows.
-### 
-Program:
-/*
-Program to design a half adder and full adder circuit and verify its truth table in quartus using Verilog programming.
-Developed by: 
-RegisterNumber:  
-*/
+### Program:
+#### HALF ADDER:
+```
+module halfadder(a,b,sum,carry);
+input a,b;
+output sum,carry;
+xor(sum,a,b);
+and(carry,a,b)
+endmodule
+```
+#### FULL ADDER :
+```
+module halfadder(a,b,c,sum,carry);
+input a,b,c;
+output sum,carry;
+xor(sum,a,b,c);
+assign carry=a&b | b&c | a&c
+endmodule
+```
 Logic symbol & Truthtable
 RTL realization
-
-### Output:
 ### RTL
-### TIMING DIAGRAM
+#### HALF ADDER:
+![HALF ADDER](https://github.com/Gowtham-jk/Exp-02-Implementation-of-Half-Adder-and-Full-Adder-circuit/assets/149857834/be4864e5-a131-4148-bdc9-eec82fe649bd)
+#### FULL ADDER:
+![FULL ADDER](https://github.com/Gowtham-jk/Exp-02-Implementation-of-Half-Adder-and-Full-Adder-circuit/assets/149857834/7a966e29-3dbb-40d5-b95b-de2bd175f3f5)
+
+### TRUTH TABLE :
+#### HALF ADDER CIRCUIT:
+![HALF ADDER TT](https://github.com/Gowtham-jk/Exp-02-Implementation-of-Half-Adder-and-Full-Adder-circuit/assets/149857834/07881f8e-34b7-4bd3-9a11-eb3743539a4f)
+#### FULL ADDER CIRCUIT:
+![FULL ADDER TT](https://github.com/Gowtham-jk/Exp-02-Implementation-of-Half-Adder-and-Full-Adder-circuit/assets/149857834/dccb327f-7c7a-4ef9-841e-19e55f9a5f91)
 
 
-### TRUTH TABLE 
+
+### OUTPUT:
+#### HALF ADDER OUTPUT:
+![HALF ADDER OUTPUT](https://github.com/Gowtham-jk/Exp-02-Implementation-of-Half-Adder-and-Full-Adder-circuit/assets/149857834/650f4926-27a0-4970-be85-0b926b2d2dcc)
+#### FULL ADDER OUTPUT:
+![FULL ADDER OUTPUT](https://github.com/Gowtham-jk/Exp-02-Implementation-of-Half-Adder-and-Full-Adder-circuit/assets/149857834/8fc9cd01-5e90-4933-8c6a-3a2251566e28)
 
 ### Result:
